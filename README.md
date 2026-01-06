@@ -4,11 +4,11 @@
 # VLAN and Trunk Ports Configuration – Cisco Lab (Packet Tracer)
 
 This repository contains a practical Cisco Packet Tracer lab that demonstrates VLAN segmentation and trunking between switches. The goal of the lab is to simulate how inter-VLAN communication is handled in real-world networks using trunk ports and static VLAN assignments.
-![Lab Topology](Lab-Topolgy.png)
 
->  Designed and tested in **Cisco Packet Tracer v8.x**  
->  Lab includes `.pkt` topology file and documentation  
->  Screenshots available under `images/` folder
+
+Designed and tested in **Cisco Packet Tracer v8.x**  
+Lab includes `.pkt` topology file and documentation  
+Screenshots available under `images/` folder
 
 
 ## Lab Overview
@@ -28,9 +28,9 @@ You will gain hands-on experience with:
 
 ---
 
-## 🖥️ Lab Topology
+## Lab Topology
 
-![Lab Topology](images/lab-topology.png)
+![Lab Topology](Lab-Topolgy.png)
 
 - **Switch1** and **Switch2** are connected using a trunk link.
 - VLAN 10 and VLAN 20 are created and PCs are assigned accordingly.
@@ -38,7 +38,7 @@ You will gain hands-on experience with:
 
 ---
 
-## 🧪 Devices Used
+## Devices Used
 
 | Device       | Purpose               |
 |--------------|------------------------|
@@ -47,7 +47,7 @@ You will gain hands-on experience with:
 
 ---
 
-## 🔄 Lab Setup Steps
+##  Lab Setup Steps
 
 ### 1. VLAN Creation
 
