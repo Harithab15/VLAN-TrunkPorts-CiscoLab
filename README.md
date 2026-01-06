@@ -59,3 +59,9 @@ Switch(config-vlan)# name HR
 Switch(config)# vlan 20
 Switch(config-vlan)# name IT
 
+### 2 Access Port Assignment
+Switch(config)# interface fa0/1
+Switch(config-if)# switchport mode access
+Switch(config-if)# switchport access vlan 10
+
+
