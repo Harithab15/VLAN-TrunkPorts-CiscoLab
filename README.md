@@ -70,7 +70,7 @@ Switch(config-if)# switchport access vlan 10
 ### 3. Trunk Port Configuration
 Between Switch1 and Switch2:
 ```bash
-Switch(config)# interface fa0/24
+Switch(config)# interface fa0/2
 Switch(config-if)# switchport trunk encapsulation dot1q
 Switch(config-if)# switchport mode trunk
 ```
@@ -79,7 +79,7 @@ Switch(config-if)# switchport mode trunk
 Switch# show vlan brief
 Switch# show interfaces trunk
 ```
-Testing
+ ## Testing
 
 Ping between PCs in the same VLAN: Should succeed
 
@@ -89,7 +89,7 @@ Verify trunk link status
 
 Ensure correct VLAN port assignment
 
-How to Use
+## How to Use
 Clone this repo
 git clone https://github.com/<your-username>/VLAN-TrunkPorts-CiscoLab.git
 
@@ -99,5 +99,13 @@ Follow the configuration steps above or refer to the article
 
 Verify and test the configuration using ping and show commands
 
+
+## Contributing
+
+Pull requests are welcome! If you’d like to contribute enhancements to the topology, feel free to fork and send a PR.
+
+## Tags
+
+#VLAN #CiscoPacketTracer #Trunking #NetworkingLabs #CCNA #GitHubLab #NetworkingFundamentals
 
 
