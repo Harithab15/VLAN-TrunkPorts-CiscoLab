@@ -1,7 +1,7 @@
 # VLAN & Trunk Ports Lab – Cisco Packet Tracer
 ##  Lab Topology
 
-![Lab Topology]Lab-Topolgy.png
+![Lab Topology](Lab-Topolgy.png)
 
 ---
 
