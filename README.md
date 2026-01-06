@@ -1,4 +1,11 @@
 # VLAN & Trunk Ports Lab – Cisco Packet Tracer
+##  Lab Topology
+
+![Lab Topology](Vlan_trunkports.png)
+
+
+
+
 
 This repository contains a hands-on lab designed in Cisco Packet Tracer to help understand:
 
