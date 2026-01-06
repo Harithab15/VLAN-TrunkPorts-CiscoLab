@@ -52,16 +52,52 @@ You will gain hands-on experience with:
 ### 1. VLAN Creation
 
 On both switches:
-```bash
+ ```bash
 Switch(config)# vlan 10
 Switch(config-vlan)# name HR
 
 Switch(config)# vlan 20
 Switch(config-vlan)# name IT
 
-### 2 Access Port Assignment
+```
+### 2. Access Port Assignment
+
+ ```bash
 Switch(config)# interface fa0/1
 Switch(config-if)# switchport mode access
 Switch(config-if)# switchport access vlan 10
+```
+### 3. Trunk Port Configuration
+Between Switch1 and Switch2:
+```bash
+Switch(config)# interface fa0/24
+Switch(config-if)# switchport trunk encapsulation dot1q
+Switch(config-if)# switchport mode trunk
+```
+### 4. Verification Commands
+```bash
+Switch# show vlan brief
+Switch# show interfaces trunk
+```
+Testing
+
+Ping between PCs in the same VLAN: Should succeed
+
+Ping between PCs in different VLANs: Should fail (no inter-VLAN routing)
+
+Verify trunk link status
+
+Ensure correct VLAN port assignment
+
+How to Use
+Clone this repo
+git clone https://github.com/<your-username>/VLAN-TrunkPorts-CiscoLab.git
+
+Open Trunkports.pkt in Cisco Packet Tracer
+
+Follow the configuration steps above or refer to the article 
+
+Verify and test the configuration using ping and show commands
+
 
 
