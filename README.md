@@ -1,39 +1,61 @@
-# VLAN & Trunk Ports Lab – Cisco Packet Tracer
-##  Lab Topology
 
+
+
+# VLAN and Trunk Ports Configuration – Cisco Lab (Packet Tracer)
+
+This repository contains a practical Cisco Packet Tracer lab that demonstrates VLAN segmentation and trunking between switches. The goal of the lab is to simulate how inter-VLAN communication is handled in real-world networks using trunk ports and static VLAN assignments.
 ![Lab Topology](Lab-Topolgy.png)
+
+>  Designed and tested in **Cisco Packet Tracer v8.x**  
+>  Lab includes `.pkt` topology file and documentation  
+>  Screenshots available under `images/` folder
+
+
+## Lab Overview
+
+This lab focuses on:
+
+- Creating multiple VLANs on switches
+- Assigning access ports to each VLAN
+- Configuring trunk ports between switches
+- Testing inter-VLAN communication with PCs
+
+You will gain hands-on experience with:
+- VLAN configuration commands
+- Trunk encapsulation (`dot1q`)
+- Interface mode transitions (`access` vs `trunk`)
+- Verifying VLANs and trunk links using `show` commands
 
 ---
 
+## 🖥️ Lab Topology
 
+![Lab Topology](images/lab-topology.png)
 
+- **Switch1** and **Switch2** are connected using a trunk link.
+- VLAN 10 and VLAN 20 are created and PCs are assigned accordingly.
+- VLANs are manually assigned to switch ports.
 
-This repository contains a hands-on lab designed in Cisco Packet Tracer to help understand:
+---
 
-VLAN creation
-VLAN assignment to switchports
-Trunk link configuration between switches
+## 🧪 Devices Used
 
+| Device       | Purpose               |
+|--------------|------------------------|
+| 2 x Switches | VLAN config + trunking |
+| 4 x PCs      | End devices in VLANs   |
 
+---
 
-Lab File: `Trunkports.pkt`
+## 🔄 Lab Setup Steps
 
-**Devices Used:**
-3 Cisco 2960 switches
-2 PCs
-Proper VLAN assignment and trunking setup between switches
+### 1. VLAN Creation
 
-**Configurations Covered**
+On both switches:
+```bash
+Switch(config)# vlan 10
+Switch(config-vlan)# name HR
 
-VLANs 10 and 20 created on all switches
-Access ports configured per VLAN:
+Switch(config)# vlan 20
+Switch(config-vlan)# name IT
 
-  interface FastEthernet0/1
-  switchport mode access
-  switchport access vlan 10
-  
-**Trunk port configuration:**
-
-  interface FastEthernet0/24
-  switchport trunk encapsulation dot1q
-  switchport mode trunk
